@@ -1,6 +1,6 @@
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     background: lemonchiffon;
 }
 
@@ -38,8 +38,4 @@ header ul {
 
 header ul li {
     list-style: none;
-}
-
-h1 {
-    font-family: Raleway, serif;
 }
