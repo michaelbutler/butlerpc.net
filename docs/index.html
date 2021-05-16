@@ -3,40 +3,34 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="{{ description|default('') }}"/>
     <link rel="icon" type="image/gif" href="images/favicon_16.gif"/>
-
-    <title>Michael Butler's Personal website</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>🚀 Michael Butler's Personal website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet" />
     <link href='css/main.css' rel='stylesheet' type='text/css'/>
-</head>
+</head><body><div class="page-wrapper">
 
-<body>
-<div class="page-wrapper">
-    <header>
-        <h1>butlerpc.net</h1>
+    <div class="inner">
+
+        <h1>butlerpc.net 🚀</h1>
+
         <section class="summary">
             <div class="portrait">
                 <img src="images/portrait.jpg" width="270" height="270" />
             </div>
             <p><strong>Michael Butler</strong></p>
-            <p>Email: michael+contact@butlerpc.net</p>
             <p>Full stack web engineer with 10+ years professional experience writing &amp; refactoring software.</p>
+            <p>michael+contact@butlerpc.net</p>
         </section>
+
         <section class="external-links">
             <ul>
-                <li><a href="https://blog.butlerpc.net">Blog</a></li>
                 <li><a href="https://github.com/michaelbutler">GitHub</a></li>
-                <li><a href="https://twitter.com/butlerpcnet">Twitter</a></li>
                 <li><a href="https://www.linkedin.com/in/michaelcbutler/">LinkedIn</a></li>
             </ul>
         </section>
-        <!-- BTC: 13hXttiVtyCHE3fcHuh1UXio4yu2uXUfVu -->
-    </header>
-
-    <section class="content">
-    </section>
+        <p><img class="preload" src="/images/astronaut-surfboard.jpg" width="1" height="1" /> &nbsp;</p>
+    </div>
 
     <footer>
     <script>
@@ -54,6 +48,17 @@
 
         ga('create', 'UA-8940113-2', 'auto');
         ga('send', 'pageview');
+
+        (function (w, d) {
+            let height = w.innerHeight || d.documentElement.clientHeight;
+            height = height - 12;
+            d.getElementsByClassName('page-wrapper')[0].style.minHeight = '' + height + 'px';
+        })(window, document);
+
+        setTimeout(function () {
+            document.getElementsByClassName('page-wrapper')[0].style.backgroundImage = 'url(/images/astronaut-surfboard.jpg)';
+            document.getElementsByClassName('preload')[0].style.display = 'none';
+        }, 750);
     </script>
     </footer>
 </div>

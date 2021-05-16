@@ -1,42 +1,80 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Lato', sans-serif;
-    background: lemonchiffon;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,0,111,1) 50%, rgba(2,0,36,1) 100%);
 }
 
 .page-wrapper {
-    width: 640px;
-    margin: 5px auto;
-    border: 3px solid gray;
-    border-radius: 50px;
-    padding: 10px;
-    background: #f1fff3;
+    background-image: url("/images/astronaut-surfboard-low.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 12px;
 }
 
 @media (max-width: 700px) {
-    .page-wrapper {
+    .page-wrapper .inner {
         width: auto;
     }
 }
 
-header {
+.inner {
     text-align: center;
+    width: 640px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #1d005ba3;
+    background: radial-gradient(circle, rgba(57,0,111,0.75) 25%, rgba(57,0,111,0.2) 87%, rgba(57,0,111,0) 100%);
+    color: white;
+    font-size: 16pt;
+    border-radius: 70px;
 }
 
-header .summary {
+.inner a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ff00e3c4;
+    font-weight: 900;
+}
+
+.inner a:hover {
+    text-decoration: underline;
+    color: rgba(255, 0, 242, 0.87);
+}
+
+.inner .portrait {
+    width: 270px;
+    height: 270px;
+    margin: auto;
+}
+
+.portrait img {
+    border-radius: 25px;
+}
+
+.inner .summary {
     width: 300px;
     margin: 0 auto;
 }
 
-header h1 {
+.inner h1 {
     margin: 5px 0 15px 0;
 }
 
-header ul {
+.inner ul {
     margin: 0 0 8px 0;
     padding: 0;
 }
 
-header ul li {
+.inner ul li {
     list-style: none;
+    display: inline-block;
+    padding: 1px 10px;
 }
