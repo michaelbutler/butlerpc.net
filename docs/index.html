@@ -55,10 +55,21 @@
             d.getElementsByClassName('page-wrapper')[0].style.minHeight = '' + height + 'px';
         })(window, document);
 
-        setTimeout(function () {
+        let img = document.querySelector('img.preload');
+  
+        function imageLoaded() {
             document.getElementsByClassName('page-wrapper')[0].style.backgroundImage = 'url(/images/astronaut-surfboard.jpg)';
             document.getElementsByClassName('preload')[0].style.display = 'none';
-        }, 750);
+        }
+  
+        if (img.complete) {
+            imageLoaded();
+        } else {
+            img.addEventListener('load', imageLoaded);
+            img.addEventListener('error', function () {
+                console.error('error occurred');
+            });
+        }
     </script>
     </footer>
 </div>
